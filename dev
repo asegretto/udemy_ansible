@@ -1,12 +1,12 @@
 [loadbalancer]
-lb01
+ip-172-31-57-14.ec2.internal
 
 [webserver]
-app01
-app02
+ip-172-31-57-16.ec2.internal
+ip-172-31-57-15.ec2.internal
 
 [database]
-db01
+ip-172-31-60-92.ec2.internal
 
 [control]
-control ansible_connection=local
+ip-172-31-61-71.ec2.internal ansible_connection=local
