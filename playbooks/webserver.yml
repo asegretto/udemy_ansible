@@ -1,11 +1,11 @@
 ---
   - hosts: webserver
-  - become: true
-  - tasks:
-    - name: install webserver
-      yum: name={{item}} state=present update_cache=yes
-      with_items:
-        - httpd
-        - mod_wsgi
-        - python-pip
-        - python-virtualenv
+    become: true
+    tasks:
+      - name: install webserver
+        yum: name={{item}} state=present update_cache=yes
+        with_items:
+          - httpd
+          - mod_wsgi
+          - python-pip
+          - python-virtualenv
