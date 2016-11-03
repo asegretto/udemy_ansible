@@ -1,5 +1,5 @@
 ---
-  -hosts: loadbalancer
-   tasks:
+  - hosts: loadbalancer
+    tasks:
      - name: install nginx
        yum: name=nginx state=present update_cache=yes
